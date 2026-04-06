@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Frontend
+gui/frontend/node_modules/
+gui/frontend/dist/
+
+# Weights (downloaded from HuggingFace at runtime)
+gui/weights/*.pt
+gui/weights/*.flac
+gui/weights/**/*.pt
+
+# Projects (user-created, local state)
+gui/projects/
+
+# Temp
+tmp/
+
+# Optional tools
+vgmstream-cli*

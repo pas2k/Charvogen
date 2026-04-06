@@ -1,0 +1,767 @@
+{
+  "metadata": {
+    "n_planes": 2048,
+    "alive_planes": 41,
+    "n_ve_planes": 0,
+    "n_cp_planes": 2048,
+    "k": 60,
+    "ve_dim": 128,
+    "cp_dim": 32,
+    "ve_only": false,
+    "cp_only": true,
+    "gated_sae": true,
+    "n_samples": 247852,
+    "mean_l0": 36.84,
+    "similarity_metric": "abs_pearson_angle_correlation",
+    "recon_quality": {
+      "ve_cos_mean": 0.041817,
+      "ve_cos_min": -0.400234,
+      "ve_cos_p5": -0.130875,
+      "cp_cos_mean": 0.983392,
+      "cp_cos_min": 0.062972,
+      "cp_cos_p5": 0.952444
+    }
+  },
+  "planes": [
+    {
+      "index": 30,
+      "subspace": "CP",
+      "angle_variance": 0.407502,
+      "activation_freq": 0.99584,
+      "mean_abs_angle": 0.513967,
+      "mean_signed_angle": -0.370078,
+      "angle_std": 0.52014,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 29,
+      "subspace": "CP",
+      "angle_variance": 0.303125,
+      "activation_freq": 0.994824,
+      "mean_abs_angle": 0.442554,
+      "mean_signed_angle": 0.261185,
+      "angle_std": 0.484673,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 27,
+      "subspace": "CP",
+      "angle_variance": 0.289244,
+      "activation_freq": 0.994517,
+      "mean_abs_angle": 0.440238,
+      "mean_signed_angle": 0.366904,
+      "angle_std": 0.393226,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 26,
+      "subspace": "CP",
+      "angle_variance": 0.250948,
+      "activation_freq": 0.99442,
+      "mean_abs_angle": 0.409942,
+      "mean_signed_angle": 0.340589,
+      "angle_std": 0.367353,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 28,
+      "subspace": "CP",
+      "angle_variance": 0.241862,
+      "activation_freq": 0.99375,
+      "mean_abs_angle": 0.395866,
+      "mean_signed_angle": 0.251221,
+      "angle_std": 0.422789,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 1,
+      "subspace": "CP",
+      "angle_variance": 0.225692,
+      "activation_freq": 0.987372,
+      "mean_abs_angle": 0.43064,
+      "mean_signed_angle": 0.429491,
+      "angle_std": 0.203051,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 25,
+      "subspace": "CP",
+      "angle_variance": 0.22554,
+      "activation_freq": 0.993185,
+      "mean_abs_angle": 0.38849,
+      "mean_signed_angle": -0.321763,
+      "angle_std": 0.349299,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 23,
+      "subspace": "CP",
+      "angle_variance": 0.206755,
+      "activation_freq": 0.993294,
+      "mean_abs_angle": 0.375446,
+      "mean_signed_angle": -0.325032,
+      "angle_std": 0.317978,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 0,
+      "subspace": "CP",
+      "angle_variance": 0.20295,
+      "activation_freq": 0.999322,
+      "mean_abs_angle": 0.407801,
+      "mean_signed_angle": -0.405688,
+      "angle_std": 0.195877,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 33,
+      "subspace": "CP",
+      "angle_variance": 0.197257,
+      "activation_freq": 0.922756,
+      "mean_abs_angle": 0.361623,
+      "mean_signed_angle": -0.347208,
+      "angle_std": 0.276954,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 24,
+      "subspace": "CP",
+      "angle_variance": 0.177878,
+      "activation_freq": 0.994912,
+      "mean_abs_angle": 0.340307,
+      "mean_signed_angle": -0.245243,
+      "angle_std": 0.343125,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 18,
+      "subspace": "CP",
+      "angle_variance": 0.162649,
+      "activation_freq": 0.994501,
+      "mean_abs_angle": 0.338106,
+      "mean_signed_angle": 0.310804,
+      "angle_std": 0.257003,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 16,
+      "subspace": "CP",
+      "angle_variance": 0.162378,
+      "activation_freq": 0.992221,
+      "mean_abs_angle": 0.3398,
+      "mean_signed_angle": -0.318575,
+      "angle_std": 0.246754,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 7,
+      "subspace": "CP",
+      "angle_variance": 0.162331,
+      "activation_freq": 0.986379,
+      "mean_abs_angle": 0.354209,
+      "mean_signed_angle": -0.350047,
+      "angle_std": 0.199495,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 15,
+      "subspace": "CP",
+      "angle_variance": 0.141643,
+      "activation_freq": 0.994868,
+      "mean_abs_angle": 0.315962,
+      "mean_signed_angle": -0.291348,
+      "angle_std": 0.238243,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 22,
+      "subspace": "CP",
+      "angle_variance": 0.140063,
+      "activation_freq": 0.993916,
+      "mean_abs_angle": 0.302239,
+      "mean_signed_angle": -0.225864,
+      "angle_std": 0.298411,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 3,
+      "subspace": "CP",
+      "angle_variance": 0.13257,
+      "activation_freq": 0.992056,
+      "mean_abs_angle": 0.315898,
+      "mean_signed_angle": 0.306958,
+      "angle_std": 0.195825,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 5,
+      "subspace": "CP",
+      "angle_variance": 0.121441,
+      "activation_freq": 0.985572,
+      "mean_abs_angle": 0.302615,
+      "mean_signed_angle": 0.29638,
+      "angle_std": 0.183303,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 11,
+      "subspace": "CP",
+      "angle_variance": 0.119882,
+      "activation_freq": 0.993423,
+      "mean_abs_angle": 0.288542,
+      "mean_signed_angle": -0.262732,
+      "angle_std": 0.225508,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 6,
+      "subspace": "CP",
+      "angle_variance": 0.119661,
+      "activation_freq": 0.987614,
+      "mean_abs_angle": 0.299077,
+      "mean_signed_angle": 0.290778,
+      "angle_std": 0.187374,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 19,
+      "subspace": "CP",
+      "angle_variance": 0.117495,
+      "activation_freq": 0.994243,
+      "mean_abs_angle": 0.278762,
+      "mean_signed_angle": 0.218949,
+      "angle_std": 0.263736,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 8,
+      "subspace": "CP",
+      "angle_variance": 0.114939,
+      "activation_freq": 0.989942,
+      "mean_abs_angle": 0.287705,
+      "mean_signed_angle": 0.273715,
+      "angle_std": 0.200048,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 31,
+      "subspace": "CP",
+      "angle_variance": 0.107199,
+      "activation_freq": 0.91881,
+      "mean_abs_angle": 0.259199,
+      "mean_signed_angle": 0.231478,
+      "angle_std": 0.231553,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 10,
+      "subspace": "CP",
+      "angle_variance": 0.101279,
+      "activation_freq": 0.993698,
+      "mean_abs_angle": 0.262103,
+      "mean_signed_angle": 0.226943,
+      "angle_std": 0.223106,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 9,
+      "subspace": "CP",
+      "angle_variance": 0.09559,
+      "activation_freq": 0.994468,
+      "mean_abs_angle": 0.256058,
+      "mean_signed_angle": -0.227031,
+      "angle_std": 0.209874,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 20,
+      "subspace": "CP",
+      "angle_variance": 0.091635,
+      "activation_freq": 0.994884,
+      "mean_abs_angle": 0.241851,
+      "mean_signed_angle": -0.119388,
+      "angle_std": 0.278176,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 21,
+      "subspace": "CP",
+      "angle_variance": 0.087012,
+      "activation_freq": 0.994606,
+      "mean_abs_angle": 0.236873,
+      "mean_signed_angle": 0.033883,
+      "angle_std": 0.293027,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 4,
+      "subspace": "CP",
+      "angle_variance": 0.08474,
+      "activation_freq": 0.992923,
+      "mean_abs_angle": 0.240643,
+      "mean_signed_angle": 0.213056,
+      "angle_std": 0.19836,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 12,
+      "subspace": "CP",
+      "angle_variance": 0.081827,
+      "activation_freq": 0.994444,
+      "mean_abs_angle": 0.232505,
+      "mean_signed_angle": 0.179028,
+      "angle_std": 0.223105,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 36,
+      "subspace": "CP",
+      "angle_variance": 0.067734,
+      "activation_freq": 0.895756,
+      "mean_abs_angle": 0.197738,
+      "mean_signed_angle": 0.139161,
+      "angle_std": 0.219928,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 14,
+      "subspace": "CP",
+      "angle_variance": 0.066291,
+      "activation_freq": 0.994807,
+      "mean_abs_angle": 0.206744,
+      "mean_signed_angle": -0.100391,
+      "angle_std": 0.237093,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 13,
+      "subspace": "CP",
+      "angle_variance": 0.063302,
+      "activation_freq": 0.994989,
+      "mean_abs_angle": 0.201429,
+      "mean_signed_angle": -0.108779,
+      "angle_std": 0.226869,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 17,
+      "subspace": "CP",
+      "angle_variance": 0.060219,
+      "activation_freq": 0.994573,
+      "mean_abs_angle": 0.196978,
+      "mean_signed_angle": -0.030169,
+      "angle_std": 0.243535,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 34,
+      "subspace": "CP",
+      "angle_variance": 0.057308,
+      "activation_freq": 0.925992,
+      "mean_abs_angle": 0.185796,
+      "mean_signed_angle": 0.117316,
+      "angle_std": 0.208674,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 2,
+      "subspace": "CP",
+      "angle_variance": 0.056845,
+      "activation_freq": 0.994384,
+      "mean_abs_angle": 0.192498,
+      "mean_signed_angle": 0.139065,
+      "angle_std": 0.193666,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 37,
+      "subspace": "CP",
+      "angle_variance": 0.050818,
+      "activation_freq": 0.712675,
+      "mean_abs_angle": 0.152408,
+      "mean_signed_angle": -0.039474,
+      "angle_std": 0.221945,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 39,
+      "subspace": "CP",
+      "angle_variance": 0.046218,
+      "activation_freq": 0.790274,
+      "mean_abs_angle": 0.152864,
+      "mean_signed_angle": 0.048399,
+      "angle_std": 0.209467,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 44,
+      "subspace": "CP",
+      "angle_variance": 0.039797,
+      "activation_freq": 0.732369,
+      "mean_abs_angle": 0.137543,
+      "mean_signed_angle": 0.00111,
+      "angle_std": 0.19949,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 1917,
+      "subspace": "CP",
+      "angle_variance": 0.027029,
+      "activation_freq": 0.121117,
+      "mean_abs_angle": 0.046224,
+      "mean_signed_angle": -0.000487,
+      "angle_std": 0.164403,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 1978,
+      "subspace": "CP",
+      "angle_variance": 0.007032,
+      "activation_freq": 0.031325,
+      "mean_abs_angle": 0.011995,
+      "mean_signed_angle": 1.5e-05,
+      "angle_std": 0.083858,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 1953,
+      "subspace": "CP",
+      "angle_variance": 0.000541,
+      "activation_freq": 0.002183,
+      "mean_abs_angle": 0.000878,
+      "mean_signed_angle": -0.00028,
+      "angle_std": 0.023252,
+      "top_emotion_correlations": []
+    }
+  ],
+  "hierarchy": {
+    "metadata": {
+      "checkpoint": "rotsae_checkpoints/r25_p2048_gatedsae_cponly_sparse_lowsp/latest_rotsae.pt",
+      "alive_planes": 41,
+      "similarity_metric": "abs_pearson_angle_correlation",
+      "linkage_method": "average",
+      "min_children": 3
+    },
+    "root": {
+      "label": "Cluster 1",
+      "n_planes": 41,
+      "children": [
+        {
+          "id": "g0",
+          "label": "Cluster 2",
+          "n_planes": 41,
+          "mean_angle_variance": 0.132103,
+          "subspace_breakdown": {
+            "n_ve": 0,
+            "n_cp": 41
+          },
+          "top_emotions": [
+            {
+              "emotion": "reverb",
+              "mean_abs_corr": 0.0271
+            },
+            {
+              "emotion": "snr",
+              "mean_abs_corr": 0.0257
+            }
+          ],
+          "children": [
+            {
+              "id": "g0_s0",
+              "label": "Cluster 3",
+              "n_planes": 6,
+              "mean_angle_variance": 0.133568,
+              "subspace_breakdown": {
+                "n_ve": 0,
+                "n_cp": 6
+              },
+              "top_emotions": [
+                {
+                  "emotion": "snr",
+                  "mean_abs_corr": 0.0374
+                },
+                {
+                  "emotion": "reverb",
+                  "mean_abs_corr": 0.0323
+                }
+              ],
+              "planes": [
+                {
+                  "index": 30,
+                  "subspace": "CP",
+                  "angle_variance": 0.407502
+                },
+                {
+                  "index": 5,
+                  "subspace": "CP",
+                  "angle_variance": 0.121441
+                },
+                {
+                  "index": 20,
+                  "subspace": "CP",
+                  "angle_variance": 0.091635
+                },
+                {
+                  "index": 13,
+                  "subspace": "CP",
+                  "angle_variance": 0.063302
+                },
+                {
+                  "index": 17,
+                  "subspace": "CP",
+                  "angle_variance": 0.060219
+                },
+                {
+                  "index": 34,
+                  "subspace": "CP",
+                  "angle_variance": 0.057308
+                }
+              ]
+            },
+            {
+              "id": "g0_s1",
+              "label": "Cluster 4",
+              "n_planes": 24,
+              "mean_angle_variance": 0.10051,
+              "subspace_breakdown": {
+                "n_ve": 0,
+                "n_cp": 24
+              },
+              "top_emotions": [
+                {
+                  "emotion": "reverb",
+                  "mean_abs_corr": 0.03
+                },
+                {
+                  "emotion": "sisdr",
+                  "mean_abs_corr": 0.0263
+                }
+              ],
+              "planes": [
+                {
+                  "index": 1,
+                  "subspace": "CP",
+                  "angle_variance": 0.225692
+                },
+                {
+                  "index": 0,
+                  "subspace": "CP",
+                  "angle_variance": 0.20295
+                },
+                {
+                  "index": 33,
+                  "subspace": "CP",
+                  "angle_variance": 0.197257
+                },
+                {
+                  "index": 16,
+                  "subspace": "CP",
+                  "angle_variance": 0.162378
+                },
+                {
+                  "index": 7,
+                  "subspace": "CP",
+                  "angle_variance": 0.162331
+                },
+                {
+                  "index": 15,
+                  "subspace": "CP",
+                  "angle_variance": 0.141643
+                },
+                {
+                  "index": 3,
+                  "subspace": "CP",
+                  "angle_variance": 0.13257
+                },
+                {
+                  "index": 11,
+                  "subspace": "CP",
+                  "angle_variance": 0.119882
+                },
+                {
+                  "index": 6,
+                  "subspace": "CP",
+                  "angle_variance": 0.119661
+                },
+                {
+                  "index": 8,
+                  "subspace": "CP",
+                  "angle_variance": 0.114939
+                },
+                {
+                  "index": 31,
+                  "subspace": "CP",
+                  "angle_variance": 0.107199
+                },
+                {
+                  "index": 10,
+                  "subspace": "CP",
+                  "angle_variance": 0.101279
+                },
+                {
+                  "index": 9,
+                  "subspace": "CP",
+                  "angle_variance": 0.09559
+                },
+                {
+                  "index": 4,
+                  "subspace": "CP",
+                  "angle_variance": 0.08474
+                },
+                {
+                  "index": 12,
+                  "subspace": "CP",
+                  "angle_variance": 0.081827
+                },
+                {
+                  "index": 36,
+                  "subspace": "CP",
+                  "angle_variance": 0.067734
+                },
+                {
+                  "index": 14,
+                  "subspace": "CP",
+                  "angle_variance": 0.066291
+                },
+                {
+                  "index": 2,
+                  "subspace": "CP",
+                  "angle_variance": 0.056845
+                },
+                {
+                  "index": 37,
+                  "subspace": "CP",
+                  "angle_variance": 0.050818
+                },
+                {
+                  "index": 39,
+                  "subspace": "CP",
+                  "angle_variance": 0.046218
+                },
+                {
+                  "index": 44,
+                  "subspace": "CP",
+                  "angle_variance": 0.039797
+                },
+                {
+                  "index": 1917,
+                  "subspace": "CP",
+                  "angle_variance": 0.027029
+                },
+                {
+                  "index": 1978,
+                  "subspace": "CP",
+                  "angle_variance": 0.007032
+                },
+                {
+                  "index": 1953,
+                  "subspace": "CP",
+                  "angle_variance": 0.000541
+                }
+              ]
+            },
+            {
+              "id": "g0_s2",
+              "label": "Cluster 5",
+              "n_planes": 8,
+              "mean_angle_variance": 0.184964,
+              "subspace_breakdown": {
+                "n_ve": 0,
+                "n_cp": 8
+              },
+              "top_emotions": [
+                {
+                  "emotion": "snr",
+                  "mean_abs_corr": 0.0302
+                },
+                {
+                  "emotion": "Authenticity",
+                  "mean_abs_corr": 0.0274
+                }
+              ],
+              "planes": [
+                {
+                  "index": 27,
+                  "subspace": "CP",
+                  "angle_variance": 0.289244
+                },
+                {
+                  "index": 26,
+                  "subspace": "CP",
+                  "angle_variance": 0.250948
+                },
+                {
+                  "index": 25,
+                  "subspace": "CP",
+                  "angle_variance": 0.22554
+                },
+                {
+                  "index": 23,
+                  "subspace": "CP",
+                  "angle_variance": 0.206755
+                },
+                {
+                  "index": 18,
+                  "subspace": "CP",
+                  "angle_variance": 0.162649
+                },
+                {
+                  "index": 22,
+                  "subspace": "CP",
+                  "angle_variance": 0.140063
+                },
+                {
+                  "index": 19,
+                  "subspace": "CP",
+                  "angle_variance": 0.117495
+                },
+                {
+                  "index": 21,
+                  "subspace": "CP",
+                  "angle_variance": 0.087012
+                }
+              ]
+            },
+            {
+              "id": "g0_s3",
+              "label": "Cluster 6",
+              "n_planes": 3,
+              "mean_angle_variance": 0.240955,
+              "subspace_breakdown": {
+                "n_ve": 0,
+                "n_cp": 3
+              },
+              "top_emotions": [
+                {
+                  "emotion": "sisdr",
+                  "mean_abs_corr": 0.0217
+                },
+                {
+                  "emotion": "Interest",
+                  "mean_abs_corr": 0.0213
+                }
+              ],
+              "planes": [
+                {
+                  "index": 29,
+                  "subspace": "CP",
+                  "angle_variance": 0.303125
+                },
+                {
+                  "index": 28,
+                  "subspace": "CP",
+                  "angle_variance": 0.241862
+                },
+                {
+                  "index": 24,
+                  "subspace": "CP",
+                  "angle_variance": 0.177878
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

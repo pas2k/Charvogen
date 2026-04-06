@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charvogen — Character Voice Generator</title>
+    <style>
+      :root {
+        --bg: #1a1a2e;
+        --bg-panel: #16213e;
+        --bg-input: #0f3460;
+        --fg: #e0e0e0;
+        --fg-dim: #8899aa;
+        --accent: #e94560;
+        --accent-dim: #a33347;
+        --success: #4ecca3;
+        --border: #2a2a4a;
+        --slider-track: #2a2a4a;
+        --slider-fill: #e94560;
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+        font-size: 13px;
+        color: var(--fg);
+        background: var(--bg);
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { min-height: 100vh; }
+      #app { min-height: 100vh; }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

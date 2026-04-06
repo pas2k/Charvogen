@@ -1,0 +1,1169 @@
+{
+  "metadata": {
+    "n_planes": 2048,
+    "alive_planes": 59,
+    "n_ve_planes": 2048,
+    "n_cp_planes": 0,
+    "k": 60,
+    "ve_dim": 128,
+    "cp_dim": 32,
+    "ve_only": true,
+    "cp_only": false,
+    "gated_sae": true,
+    "n_samples": 247852,
+    "mean_l0": 52.19,
+    "similarity_metric": "abs_pearson_angle_correlation",
+    "recon_quality": {
+      "ve_cos_mean": 0.883073,
+      "ve_cos_min": 0.524741,
+      "ve_cos_p5": 0.815454,
+      "cp_cos_mean": 0.02809,
+      "cp_cos_min": -0.679782,
+      "cp_cos_p5": -0.271483
+    }
+  },
+  "planes": [
+    {
+      "index": 2046,
+      "subspace": "VE",
+      "angle_variance": 0.819363,
+      "activation_freq": 0.947876,
+      "mean_abs_angle": 0.717426,
+      "mean_signed_angle": 0.029805,
+      "angle_std": 0.904698,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 2036,
+      "subspace": "VE",
+      "angle_variance": 0.414302,
+      "activation_freq": 0.816887,
+      "mean_abs_angle": 0.46134,
+      "mean_signed_angle": 0.176458,
+      "angle_std": 0.619004,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 2043,
+      "subspace": "VE",
+      "angle_variance": 0.390765,
+      "activation_freq": 0.580048,
+      "mean_abs_angle": 0.378854,
+      "mean_signed_angle": 0.009767,
+      "angle_std": 0.625037,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 1988,
+      "subspace": "VE",
+      "angle_variance": 0.384732,
+      "activation_freq": 0.396261,
+      "mean_abs_angle": 0.343382,
+      "mean_signed_angle": 0.257987,
+      "angle_std": 0.56407,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 2007,
+      "subspace": "VE",
+      "angle_variance": 0.301375,
+      "activation_freq": 0.613794,
+      "mean_abs_angle": 0.344018,
+      "mean_signed_angle": -0.132683,
+      "angle_std": 0.532702,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 2013,
+      "subspace": "VE",
+      "angle_variance": 0.26709,
+      "activation_freq": 0.600721,
+      "mean_abs_angle": 0.317284,
+      "mean_signed_angle": -0.058438,
+      "angle_std": 0.513494,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 45,
+      "subspace": "VE",
+      "angle_variance": 0.212833,
+      "activation_freq": 0.989623,
+      "mean_abs_angle": 0.354365,
+      "mean_signed_angle": 0.017605,
+      "angle_std": 0.461003,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 41,
+      "subspace": "VE",
+      "angle_variance": 0.200595,
+      "activation_freq": 0.988715,
+      "mean_abs_angle": 0.336748,
+      "mean_signed_angle": -0.018576,
+      "angle_std": 0.447493,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 46,
+      "subspace": "VE",
+      "angle_variance": 0.196232,
+      "activation_freq": 0.993779,
+      "mean_abs_angle": 0.353089,
+      "mean_signed_angle": 0.019919,
+      "angle_std": 0.442534,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 1961,
+      "subspace": "VE",
+      "angle_variance": 0.192325,
+      "activation_freq": 0.455026,
+      "mean_abs_angle": 0.235822,
+      "mean_signed_angle": -0.126057,
+      "angle_std": 0.420043,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 1948,
+      "subspace": "VE",
+      "angle_variance": 0.185998,
+      "activation_freq": 0.371383,
+      "mean_abs_angle": 0.211475,
+      "mean_signed_angle": -0.053907,
+      "angle_std": 0.427894,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 48,
+      "subspace": "VE",
+      "angle_variance": 0.185068,
+      "activation_freq": 0.994408,
+      "mean_abs_angle": 0.343294,
+      "mean_signed_angle": 0.054291,
+      "angle_std": 0.426757,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 38,
+      "subspace": "VE",
+      "angle_variance": 0.182323,
+      "activation_freq": 0.986157,
+      "mean_abs_angle": 0.319477,
+      "mean_signed_angle": -0.019013,
+      "angle_std": 0.42657,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 1969,
+      "subspace": "VE",
+      "angle_variance": 0.179645,
+      "activation_freq": 0.40134,
+      "mean_abs_angle": 0.214443,
+      "mean_signed_angle": 0.02547,
+      "angle_std": 0.42308,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 1921,
+      "subspace": "VE",
+      "angle_variance": 0.178609,
+      "activation_freq": 0.412294,
+      "mean_abs_angle": 0.214498,
+      "mean_signed_angle": -0.03228,
+      "angle_std": 0.421387,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 23,
+      "subspace": "VE",
+      "angle_variance": 0.169941,
+      "activation_freq": 0.995312,
+      "mean_abs_angle": 0.326629,
+      "mean_signed_angle": -0.168277,
+      "angle_std": 0.37633,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 43,
+      "subspace": "VE",
+      "angle_variance": 0.163128,
+      "activation_freq": 0.993004,
+      "mean_abs_angle": 0.322826,
+      "mean_signed_angle": 0.187883,
+      "angle_std": 0.357531,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 12,
+      "subspace": "VE",
+      "angle_variance": 0.163121,
+      "activation_freq": 0.983857,
+      "mean_abs_angle": 0.301147,
+      "mean_signed_angle": 0.225638,
+      "angle_std": 0.334976,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 44,
+      "subspace": "VE",
+      "angle_variance": 0.156542,
+      "activation_freq": 0.992859,
+      "mean_abs_angle": 0.315545,
+      "mean_signed_angle": 0.202635,
+      "angle_std": 0.339826,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 37,
+      "subspace": "VE",
+      "angle_variance": 0.151311,
+      "activation_freq": 0.995481,
+      "mean_abs_angle": 0.307401,
+      "mean_signed_angle": -0.035706,
+      "angle_std": 0.387345,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 9,
+      "subspace": "VE",
+      "angle_variance": 0.137754,
+      "activation_freq": 0.984196,
+      "mean_abs_angle": 0.276975,
+      "mean_signed_angle": -0.074588,
+      "angle_std": 0.363581,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 30,
+      "subspace": "VE",
+      "angle_variance": 0.132273,
+      "activation_freq": 0.988203,
+      "mean_abs_angle": 0.279916,
+      "mean_signed_angle": -0.050827,
+      "angle_std": 0.360125,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 17,
+      "subspace": "VE",
+      "angle_variance": 0.126351,
+      "activation_freq": 0.989796,
+      "mean_abs_angle": 0.269117,
+      "mean_signed_angle": 0.139086,
+      "angle_std": 0.327119,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 10,
+      "subspace": "VE",
+      "angle_variance": 0.125393,
+      "activation_freq": 0.983099,
+      "mean_abs_angle": 0.26134,
+      "mean_signed_angle": -0.125851,
+      "angle_std": 0.330991,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 27,
+      "subspace": "VE",
+      "angle_variance": 0.122514,
+      "activation_freq": 0.991935,
+      "mean_abs_angle": 0.271326,
+      "mean_signed_angle": -0.066772,
+      "angle_std": 0.343593,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 20,
+      "subspace": "VE",
+      "angle_variance": 0.121962,
+      "activation_freq": 0.990603,
+      "mean_abs_angle": 0.277556,
+      "mean_signed_angle": 0.045361,
+      "angle_std": 0.346273,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 36,
+      "subspace": "VE",
+      "angle_variance": 0.121432,
+      "activation_freq": 0.992165,
+      "mean_abs_angle": 0.274041,
+      "mean_signed_angle": 0.05368,
+      "angle_std": 0.344313,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 24,
+      "subspace": "VE",
+      "angle_variance": 0.119719,
+      "activation_freq": 0.988997,
+      "mean_abs_angle": 0.261626,
+      "mean_signed_angle": 0.071529,
+      "angle_std": 0.338531,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 33,
+      "subspace": "VE",
+      "angle_variance": 0.116844,
+      "activation_freq": 0.991781,
+      "mean_abs_angle": 0.269416,
+      "mean_signed_angle": -0.086373,
+      "angle_std": 0.330733,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 42,
+      "subspace": "VE",
+      "angle_variance": 0.112464,
+      "activation_freq": 0.991568,
+      "mean_abs_angle": 0.266563,
+      "mean_signed_angle": -0.043077,
+      "angle_std": 0.332579,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 5,
+      "subspace": "VE",
+      "angle_variance": 0.109611,
+      "activation_freq": 0.989954,
+      "mean_abs_angle": 0.256758,
+      "mean_signed_angle": -0.16229,
+      "angle_std": 0.288571,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 22,
+      "subspace": "VE",
+      "angle_variance": 0.108193,
+      "activation_freq": 0.989179,
+      "mean_abs_angle": 0.250977,
+      "mean_signed_angle": 0.063289,
+      "angle_std": 0.322781,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 34,
+      "subspace": "VE",
+      "angle_variance": 0.107574,
+      "activation_freq": 0.99208,
+      "mean_abs_angle": 0.253969,
+      "mean_signed_angle": 0.038835,
+      "angle_std": 0.325678,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 21,
+      "subspace": "VE",
+      "angle_variance": 0.104166,
+      "activation_freq": 0.991011,
+      "mean_abs_angle": 0.254143,
+      "mean_signed_angle": 0.019879,
+      "angle_std": 0.322135,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 16,
+      "subspace": "VE",
+      "angle_variance": 0.103816,
+      "activation_freq": 0.992516,
+      "mean_abs_angle": 0.255717,
+      "mean_signed_angle": 0.149424,
+      "angle_std": 0.285463,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 11,
+      "subspace": "VE",
+      "angle_variance": 0.103748,
+      "activation_freq": 0.990184,
+      "mean_abs_angle": 0.256725,
+      "mean_signed_angle": 0.118462,
+      "angle_std": 0.299525,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 13,
+      "subspace": "VE",
+      "angle_variance": 0.100872,
+      "activation_freq": 0.990196,
+      "mean_abs_angle": 0.247263,
+      "mean_signed_angle": 0.058263,
+      "angle_std": 0.312214,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 14,
+      "subspace": "VE",
+      "angle_variance": 0.100223,
+      "activation_freq": 0.995207,
+      "mean_abs_angle": 0.240858,
+      "mean_signed_angle": 0.066871,
+      "angle_std": 0.309437,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 25,
+      "subspace": "VE",
+      "angle_variance": 0.099744,
+      "activation_freq": 0.993472,
+      "mean_abs_angle": 0.246012,
+      "mean_signed_angle": -0.100338,
+      "angle_std": 0.29946,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 18,
+      "subspace": "VE",
+      "angle_variance": 0.099676,
+      "activation_freq": 0.993464,
+      "mean_abs_angle": 0.249591,
+      "mean_signed_angle": -0.048367,
+      "angle_std": 0.311989,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 2,
+      "subspace": "VE",
+      "angle_variance": 0.099069,
+      "activation_freq": 0.988582,
+      "mean_abs_angle": 0.245296,
+      "mean_signed_angle": 0.186074,
+      "angle_std": 0.253862,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 29,
+      "subspace": "VE",
+      "angle_variance": 0.097847,
+      "activation_freq": 0.994844,
+      "mean_abs_angle": 0.247587,
+      "mean_signed_angle": 0.030706,
+      "angle_std": 0.311295,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 26,
+      "subspace": "VE",
+      "angle_variance": 0.096137,
+      "activation_freq": 0.9949,
+      "mean_abs_angle": 0.246648,
+      "mean_signed_angle": 0.051746,
+      "angle_std": 0.305712,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 39,
+      "subspace": "VE",
+      "angle_variance": 0.095853,
+      "activation_freq": 0.993185,
+      "mean_abs_angle": 0.24628,
+      "mean_signed_angle": 0.071377,
+      "angle_std": 0.301262,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 40,
+      "subspace": "VE",
+      "angle_variance": 0.087031,
+      "activation_freq": 0.990878,
+      "mean_abs_angle": 0.234957,
+      "mean_signed_angle": 0.033833,
+      "angle_std": 0.293065,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 31,
+      "subspace": "VE",
+      "angle_variance": 0.085958,
+      "activation_freq": 0.992927,
+      "mean_abs_angle": 0.229812,
+      "mean_signed_angle": -0.046351,
+      "angle_std": 0.2895,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 32,
+      "subspace": "VE",
+      "angle_variance": 0.084274,
+      "activation_freq": 0.991225,
+      "mean_abs_angle": 0.230623,
+      "mean_signed_angle": 0.02058,
+      "angle_std": 0.28957,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 7,
+      "subspace": "VE",
+      "angle_variance": 0.080895,
+      "activation_freq": 0.992233,
+      "mean_abs_angle": 0.226561,
+      "mean_signed_angle": -0.020389,
+      "angle_std": 0.283688,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 3,
+      "subspace": "VE",
+      "angle_variance": 0.078697,
+      "activation_freq": 0.988763,
+      "mean_abs_angle": 0.220385,
+      "mean_signed_angle": 0.01504,
+      "angle_std": 0.280127,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 35,
+      "subspace": "VE",
+      "angle_variance": 0.076717,
+      "activation_freq": 0.992318,
+      "mean_abs_angle": 0.21911,
+      "mean_signed_angle": 0.02,
+      "angle_std": 0.276256,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 28,
+      "subspace": "VE",
+      "angle_variance": 0.07503,
+      "activation_freq": 0.992508,
+      "mean_abs_angle": 0.217382,
+      "mean_signed_angle": -0.057255,
+      "angle_std": 0.267866,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 6,
+      "subspace": "VE",
+      "angle_variance": 0.0564,
+      "activation_freq": 0.990805,
+      "mean_abs_angle": 0.186955,
+      "mean_signed_angle": -0.091092,
+      "angle_std": 0.219322,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 4,
+      "subspace": "VE",
+      "angle_variance": 0.055162,
+      "activation_freq": 0.990757,
+      "mean_abs_angle": 0.185689,
+      "mean_signed_angle": -0.010678,
+      "angle_std": 0.234625,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 19,
+      "subspace": "VE",
+      "angle_variance": 0.048078,
+      "activation_freq": 0.991015,
+      "mean_abs_angle": 0.173686,
+      "mean_signed_angle": -0.05863,
+      "angle_std": 0.211284,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 1,
+      "subspace": "VE",
+      "angle_variance": 0.043573,
+      "activation_freq": 0.992104,
+      "mean_abs_angle": 0.165777,
+      "mean_signed_angle": 0.026777,
+      "angle_std": 0.207017,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 8,
+      "subspace": "VE",
+      "angle_variance": 0.041687,
+      "activation_freq": 0.991253,
+      "mean_abs_angle": 0.161702,
+      "mean_signed_angle": -0.012643,
+      "angle_std": 0.203784,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 0,
+      "subspace": "VE",
+      "angle_variance": 0.037539,
+      "activation_freq": 0.991459,
+      "mean_abs_angle": 0.153333,
+      "mean_signed_angle": 0.033152,
+      "angle_std": 0.190892,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 1923,
+      "subspace": "VE",
+      "angle_variance": 0.008368,
+      "activation_freq": 0.006903,
+      "mean_abs_angle": 0.00669,
+      "mean_signed_angle": 0.001922,
+      "angle_std": 0.091455,
+      "top_emotion_correlations": []
+    },
+    {
+      "index": 1998,
+      "subspace": "VE",
+      "angle_variance": 0.000159,
+      "activation_freq": 0.00025,
+      "mean_abs_angle": 0.00018,
+      "mean_signed_angle": -5.6e-05,
+      "angle_std": 0.012626,
+      "top_emotion_correlations": []
+    }
+  ],
+  "hierarchy": {
+    "metadata": {
+      "checkpoint": "rotsae_checkpoints/r23_p2048_gatedsae_veonly_sparse_lowsp/latest_rotsae.pt",
+      "alive_planes": 59,
+      "similarity_metric": "abs_pearson_angle_correlation",
+      "linkage_method": "average",
+      "min_children": 3
+    },
+    "root": {
+      "label": "Cluster 1",
+      "n_planes": 59,
+      "children": [
+        {
+          "id": "g2",
+          "label": "Cluster 2",
+          "n_planes": 48,
+          "mean_angle_variance": 0.148775,
+          "subspace_breakdown": {
+            "n_ve": 48,
+            "n_cp": 0
+          },
+          "top_emotions": [
+            {
+              "emotion": "Arousal",
+              "mean_abs_corr": 0.0807
+            },
+            {
+              "emotion": "Submissive_vs._Dominant",
+              "mean_abs_corr": 0.0789
+            }
+          ],
+          "children": [
+            {
+              "id": "g2_s0",
+              "label": "Cluster 3",
+              "n_planes": 4,
+              "mean_angle_variance": 0.230289,
+              "subspace_breakdown": {
+                "n_ve": 4,
+                "n_cp": 0
+              },
+              "top_emotions": [
+                {
+                  "emotion": "Anger",
+                  "mean_abs_corr": 0.0639
+                },
+                {
+                  "emotion": "Arousal",
+                  "mean_abs_corr": 0.0558
+                }
+              ],
+              "planes": [
+                {
+                  "index": 2036,
+                  "subspace": "VE",
+                  "angle_variance": 0.414302
+                },
+                {
+                  "index": 1988,
+                  "subspace": "VE",
+                  "angle_variance": 0.384732
+                },
+                {
+                  "index": 20,
+                  "subspace": "VE",
+                  "angle_variance": 0.121962
+                },
+                {
+                  "index": 1998,
+                  "subspace": "VE",
+                  "angle_variance": 0.000159
+                }
+              ]
+            },
+            {
+              "id": "g2_s1",
+              "label": "Cluster 4",
+              "n_planes": 4,
+              "mean_angle_variance": 0.348471,
+              "subspace_breakdown": {
+                "n_ve": 4,
+                "n_cp": 0
+              },
+              "top_emotions": [
+                {
+                  "emotion": "Arousal",
+                  "mean_abs_corr": 0.1847
+                },
+                {
+                  "emotion": "Anger",
+                  "mean_abs_corr": 0.1839
+                }
+              ],
+              "planes": [
+                {
+                  "index": 2046,
+                  "subspace": "VE",
+                  "angle_variance": 0.819363
+                },
+                {
+                  "index": 2013,
+                  "subspace": "VE",
+                  "angle_variance": 0.26709
+                },
+                {
+                  "index": 1948,
+                  "subspace": "VE",
+                  "angle_variance": 0.185998
+                },
+                {
+                  "index": 36,
+                  "subspace": "VE",
+                  "angle_variance": 0.121432
+                }
+              ]
+            },
+            {
+              "id": "g2_s2",
+              "label": "Cluster 5",
+              "n_planes": 8,
+              "mean_angle_variance": 0.088216,
+              "subspace_breakdown": {
+                "n_ve": 8,
+                "n_cp": 0
+              },
+              "top_emotions": [
+                {
+                  "emotion": "Submissive_vs._Dominant",
+                  "mean_abs_corr": 0.1116
+                },
+                {
+                  "emotion": "Authenticity",
+                  "mean_abs_corr": 0.1026
+                }
+              ],
+              "planes": [
+                {
+                  "index": 23,
+                  "subspace": "VE",
+                  "angle_variance": 0.169941
+                },
+                {
+                  "index": 22,
+                  "subspace": "VE",
+                  "angle_variance": 0.108193
+                },
+                {
+                  "index": 21,
+                  "subspace": "VE",
+                  "angle_variance": 0.104166
+                },
+                {
+                  "index": 2,
+                  "subspace": "VE",
+                  "angle_variance": 0.099069
+                },
+                {
+                  "index": 7,
+                  "subspace": "VE",
+                  "angle_variance": 0.080895
+                },
+                {
+                  "index": 3,
+                  "subspace": "VE",
+                  "angle_variance": 0.078697
+                },
+                {
+                  "index": 6,
+                  "subspace": "VE",
+                  "angle_variance": 0.0564
+                },
+                {
+                  "index": 1923,
+                  "subspace": "VE",
+                  "angle_variance": 0.008368
+                }
+              ]
+            },
+            {
+              "id": "g2_s3",
+              "label": "Cluster 6",
+              "n_planes": 12,
+              "mean_angle_variance": 0.098863,
+              "subspace_breakdown": {
+                "n_ve": 12,
+                "n_cp": 0
+              },
+              "top_emotions": [
+                {
+                  "emotion": "Soft_vs._Harsh",
+                  "mean_abs_corr": 0.0799
+                },
+                {
+                  "emotion": "Submissive_vs._Dominant",
+                  "mean_abs_corr": 0.0774
+                }
+              ],
+              "planes": [
+                {
+                  "index": 12,
+                  "subspace": "VE",
+                  "angle_variance": 0.163121
+                },
+                {
+                  "index": 9,
+                  "subspace": "VE",
+                  "angle_variance": 0.137754
+                },
+                {
+                  "index": 10,
+                  "subspace": "VE",
+                  "angle_variance": 0.125393
+                },
+                {
+                  "index": 5,
+                  "subspace": "VE",
+                  "angle_variance": 0.109611
+                },
+                {
+                  "index": 16,
+                  "subspace": "VE",
+                  "angle_variance": 0.103816
+                },
+                {
+                  "index": 11,
+                  "subspace": "VE",
+                  "angle_variance": 0.103748
+                },
+                {
+                  "index": 14,
+                  "subspace": "VE",
+                  "angle_variance": 0.100223
+                },
+                {
+                  "index": 25,
+                  "subspace": "VE",
+                  "angle_variance": 0.099744
+                },
+                {
+                  "index": 26,
+                  "subspace": "VE",
+                  "angle_variance": 0.096137
+                },
+                {
+                  "index": 4,
+                  "subspace": "VE",
+                  "angle_variance": 0.055162
+                },
+                {
+                  "index": 19,
+                  "subspace": "VE",
+                  "angle_variance": 0.048078
+                },
+                {
+                  "index": 1,
+                  "subspace": "VE",
+                  "angle_variance": 0.043573
+                }
+              ]
+            },
+            {
+              "id": "g2_s4",
+              "label": "Cluster 7",
+              "n_planes": 7,
+              "mean_angle_variance": 0.160997,
+              "subspace_breakdown": {
+                "n_ve": 7,
+                "n_cp": 0
+              },
+              "top_emotions": [
+                {
+                  "emotion": "Arousal",
+                  "mean_abs_corr": 0.1174
+                },
+                {
+                  "emotion": "Impatience_and_Irritability",
+                  "mean_abs_corr": 0.1079
+                }
+              ],
+              "planes": [
+                {
+                  "index": 2043,
+                  "subspace": "VE",
+                  "angle_variance": 0.390765
+                },
+                {
+                  "index": 41,
+                  "subspace": "VE",
+                  "angle_variance": 0.200595
+                },
+                {
+                  "index": 48,
+                  "subspace": "VE",
+                  "angle_variance": 0.185068
+                },
+                {
+                  "index": 42,
+                  "subspace": "VE",
+                  "angle_variance": 0.112464
+                },
+                {
+                  "index": 13,
+                  "subspace": "VE",
+                  "angle_variance": 0.100872
+                },
+                {
+                  "index": 18,
+                  "subspace": "VE",
+                  "angle_variance": 0.099676
+                },
+                {
+                  "index": 0,
+                  "subspace": "VE",
+                  "angle_variance": 0.037539
+                }
+              ]
+            },
+            {
+              "id": "g2_s5",
+              "label": "Cluster 8",
+              "n_planes": 5,
+              "mean_angle_variance": 0.143297,
+              "subspace_breakdown": {
+                "n_ve": 5,
+                "n_cp": 0
+              },
+              "top_emotions": [
+                {
+                  "emotion": "Infatuation",
+                  "mean_abs_corr": 0.0592
+                },
+                {
+                  "emotion": "reverb",
+                  "mean_abs_corr": 0.0589
+                }
+              ],
+              "planes": [
+                {
+                  "index": 2007,
+                  "subspace": "VE",
+                  "angle_variance": 0.301375
+                },
+                {
+                  "index": 27,
+                  "subspace": "VE",
+                  "angle_variance": 0.122514
+                },
+                {
+                  "index": 24,
+                  "subspace": "VE",
+                  "angle_variance": 0.119719
+                },
+                {
+                  "index": 29,
+                  "subspace": "VE",
+                  "angle_variance": 0.097847
+                },
+                {
+                  "index": 28,
+                  "subspace": "VE",
+                  "angle_variance": 0.07503
+                }
+              ]
+            },
+            {
+              "id": "g2_s6",
+              "label": "Cluster 9",
+              "n_planes": 4,
+              "mean_angle_variance": 0.136461,
+              "subspace_breakdown": {
+                "n_ve": 4,
+                "n_cp": 0
+              },
+              "top_emotions": [
+                {
+                  "emotion": "High_Pitched_vs._Low_Pitched",
+                  "mean_abs_corr": 0.073
+                },
+                {
+                  "emotion": "Monotone_vs._Expressive",
+                  "mean_abs_corr": 0.0598
+                }
+              ],
+              "planes": [
+                {
+                  "index": 1969,
+                  "subspace": "VE",
+                  "angle_variance": 0.179645
+                },
+                {
+                  "index": 30,
+                  "subspace": "VE",
+                  "angle_variance": 0.132273
+                },
+                {
+                  "index": 17,
+                  "subspace": "VE",
+                  "angle_variance": 0.126351
+                },
+                {
+                  "index": 34,
+                  "subspace": "VE",
+                  "angle_variance": 0.107574
+                }
+              ]
+            },
+            {
+              "id": "g2_s7",
+              "label": "Cluster 10",
+              "n_planes": 4,
+              "mean_angle_variance": 0.136188,
+              "subspace_breakdown": {
+                "n_ve": 4,
+                "n_cp": 0
+              },
+              "top_emotions": [
+                {
+                  "emotion": "stoi",
+                  "mean_abs_corr": 0.1487
+                },
+                {
+                  "emotion": "sisdr",
+                  "mean_abs_corr": 0.1252
+                }
+              ],
+              "planes": [
+                {
+                  "index": 1961,
+                  "subspace": "VE",
+                  "angle_variance": 0.192325
+                },
+                {
+                  "index": 37,
+                  "subspace": "VE",
+                  "angle_variance": 0.151311
+                },
+                {
+                  "index": 33,
+                  "subspace": "VE",
+                  "angle_variance": 0.116844
+                },
+                {
+                  "index": 32,
+                  "subspace": "VE",
+                  "angle_variance": 0.084274
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1",
+          "label": "Cluster 11",
+          "n_planes": 8,
+          "mean_angle_variance": 0.14182,
+          "subspace_breakdown": {
+            "n_ve": 8,
+            "n_cp": 0
+          },
+          "top_emotions": [
+            {
+              "emotion": "reverb",
+              "mean_abs_corr": 0.0414
+            },
+            {
+              "emotion": "Arousal",
+              "mean_abs_corr": 0.0394
+            }
+          ],
+          "planes": [
+            {
+              "index": 45,
+              "subspace": "VE",
+              "angle_variance": 0.212833
+            },
+            {
+              "index": 46,
+              "subspace": "VE",
+              "angle_variance": 0.196232
+            },
+            {
+              "index": 38,
+              "subspace": "VE",
+              "angle_variance": 0.182323
+            },
+            {
+              "index": 43,
+              "subspace": "VE",
+              "angle_variance": 0.163128
+            },
+            {
+              "index": 44,
+              "subspace": "VE",
+              "angle_variance": 0.156542
+            },
+            {
+              "index": 39,
+              "subspace": "VE",
+              "angle_variance": 0.095853
+            },
+            {
+              "index": 31,
+              "subspace": "VE",
+              "angle_variance": 0.085958
+            },
+            {
+              "index": 8,
+              "subspace": "VE",
+              "angle_variance": 0.041687
+            }
+          ]
+        },
+        {
+          "id": "g0",
+          "label": "Cluster 12",
+          "n_planes": 3,
+          "mean_angle_variance": 0.114119,
+          "subspace_breakdown": {
+            "n_ve": 3,
+            "n_cp": 0
+          },
+          "top_emotions": [
+            {
+              "emotion": "Gender",
+              "mean_abs_corr": 0.0651
+            },
+            {
+              "emotion": "Authenticity",
+              "mean_abs_corr": 0.0577
+            }
+          ],
+          "planes": [
+            {
+              "index": 1921,
+              "subspace": "VE",
+              "angle_variance": 0.178609
+            },
+            {
+              "index": 40,
+              "subspace": "VE",
+              "angle_variance": 0.087031
+            },
+            {
+              "index": 35,
+              "subspace": "VE",
+              "angle_variance": 0.076717
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
