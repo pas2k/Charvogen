@@ -1,5 +1,6 @@
 <script>
   import { t3PromptState, referenceState, uploadT3Prompt, applyRefT3, resetT3ToSeed } from "../../lib/stores.svelte.js";
+  import { createWavRecorder } from "../../lib/audio.js";
 
   let fileInputEl;
 
@@ -24,9 +25,7 @@
   let canRecord = $derived(typeof navigator !== "undefined" && !!navigator.mediaDevices);
   let recording = $state(false);
   let elapsedSec = $state(0);
-  let mediaRecorder = null;
-  let recordedChunks = [];
-  let recStream = null;
+  let recorder = null;
   let timerInterval = null;
 
   function formatTime(sec) {
@@ -36,34 +35,26 @@
   }
 
   async function startRecording() {
+    recorder = createWavRecorder();
     try {
-      recStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      await recorder.start();
     } catch {
+      recorder = null;
       return; // user denied or no mic
     }
-    recordedChunks = [];
-    // prefer webm, fall back to whatever the browser supports
-    const mimeType = MediaRecorder.isTypeSupported("audio/webm") ? "audio/webm" : "";
-    mediaRecorder = new MediaRecorder(recStream, mimeType ? { mimeType } : undefined);
-    mediaRecorder.ondataavailable = (e) => { if (e.data.size > 0) recordedChunks.push(e.data); };
-    mediaRecorder.onstop = () => {
-      const ext = mediaRecorder.mimeType?.includes("webm") ? "webm" : "ogg";
-      const blob = new Blob(recordedChunks, { type: mediaRecorder.mimeType || "audio/webm" });
-      const file = new File([blob], `recording.${ext}`, { type: blob.type });
-      uploadT3Prompt(file);
-    };
-    mediaRecorder.start();
     recording = true;
     elapsedSec = 0;
     timerInterval = setInterval(() => { elapsedSec++; }, 1000);
   }
 
-  function stopRecording() {
+  async function stopRecording() {
     clearInterval(timerInterval);
     timerInterval = null;
-    if (mediaRecorder && mediaRecorder.state !== "inactive") mediaRecorder.stop();
-    if (recStream) { recStream.getTracks().forEach(t => t.stop()); recStream = null; }
     recording = false;
+    if (!recorder) return;
+    const file = await recorder.stop();
+    recorder = null;
+    uploadT3Prompt(file);
   }
 </script>
 

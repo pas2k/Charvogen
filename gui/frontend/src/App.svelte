@@ -17,6 +17,7 @@
   } from "./lib/stores.svelte.js";
   import { connectTTSWebSocket } from "./lib/api.js";
   import { addStashEntry } from "./lib/stash.js";
+  import { createWavRecorder } from "./lib/audio.js";
 
   let refInputEl;
   let configInputEl;
@@ -287,9 +288,7 @@
   let canRecord = $derived(typeof navigator !== "undefined" && !!navigator.mediaDevices);
   let refRecording = $state(false);
   let refElapsedSec = $state(0);
-  let refMediaRecorder = null;
-  let refRecordedChunks = [];
-  let refRecStream = null;
+  let refRecorder = null;
   let refTimerInterval = null;
 
   function formatTime(sec) {
@@ -299,33 +298,26 @@
   }
 
   async function startRefRecording() {
+    refRecorder = createWavRecorder();
     try {
-      refRecStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      await refRecorder.start();
     } catch {
+      refRecorder = null;
       return;
     }
-    refRecordedChunks = [];
-    const mimeType = MediaRecorder.isTypeSupported("audio/webm") ? "audio/webm" : "";
-    refMediaRecorder = new MediaRecorder(refRecStream, mimeType ? { mimeType } : undefined);
-    refMediaRecorder.ondataavailable = (e) => { if (e.data.size > 0) refRecordedChunks.push(e.data); };
-    refMediaRecorder.onstop = () => {
-      const ext = refMediaRecorder.mimeType?.includes("webm") ? "webm" : "ogg";
-      const blob = new Blob(refRecordedChunks, { type: refMediaRecorder.mimeType || "audio/webm" });
-      const file = new File([blob], `recording.${ext}`, { type: blob.type });
-      analyzeReference(file);
-    };
-    refMediaRecorder.start();
     refRecording = true;
     refElapsedSec = 0;
     refTimerInterval = setInterval(() => { refElapsedSec++; }, 1000);
   }
 
-  function stopRefRecording() {
+  async function stopRefRecording() {
     clearInterval(refTimerInterval);
     refTimerInterval = null;
-    if (refMediaRecorder && refMediaRecorder.state !== "inactive") refMediaRecorder.stop();
-    if (refRecStream) { refRecStream.getTracks().forEach(t => t.stop()); refRecStream = null; }
     refRecording = false;
+    if (!refRecorder) return;
+    const file = await refRecorder.stop();
+    refRecorder = null;
+    analyzeReference(file);
   }
 
   function getEmotionsData() {
