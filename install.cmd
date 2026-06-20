@@ -2,6 +2,7 @@
 
 if not defined PYTHON (set PYTHON="%LocalAppData%\Microsoft\WindowsApps\py.exe")
 if not defined VENV_DIR (set "VENV_DIR=%~dp0%venv")
+if not defined VIRTUAL_ENV (set "VIRTUAL_ENV=%~dp0venv")
 
 mkdir tmp 2>NUL
 
@@ -42,7 +43,7 @@ echo venv %PYTHON%
 :launch
 
 if exist "%VENV_DIR%\Lib\site-packages\torch" goto skip_torch
-"%VENV_DIR%\Scripts\python.exe" -m pip install --upgrade --pre torch torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128
+"%VENV_DIR%\Scripts\python.exe" -m pip install --upgrade --pre torch --index-url https://download.pytorch.org/whl/cu132
 
 :skip_torch
 "%VENV_DIR%\Scripts\python.exe" -m pip install -r requirements.txt
