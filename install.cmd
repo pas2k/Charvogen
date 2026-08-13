@@ -1,21 +1,23 @@
 @echo off
 
+pushd "%~dp0"
+
 if not defined PYTHON (set PYTHON="%LocalAppData%\Microsoft\WindowsApps\py.exe")
-if not defined VENV_DIR (set "VENV_DIR=%~dp0%venv")
+if not defined VENV_DIR (set "VENV_DIR=%~dp0venv")
 if not defined VIRTUAL_ENV (set "VIRTUAL_ENV=%~dp0venv")
 
 mkdir tmp 2>NUL
 
-%PYTHON% -c "" >tmp/stdout.txt 2>tmp/stderr.txt
+%PYTHON% -c "" >tmp\stdout.txt 2>tmp\stderr.txt
 if %ERRORLEVEL% == 0 goto :check_pip
 echo Couldn't launch Python. Install Python Install Manager from Microsoft Store, and Python 3.14.(latest) from python.org.
 goto :show_stdout_stderr
 
 :check_pip
-%PYTHON% -3.14 -mpip --help >tmp/stdout.txt 2>tmp/stderr.txt
+%PYTHON% -3.14 -mpip --help >tmp\stdout.txt 2>tmp\stderr.txt
 if %ERRORLEVEL% == 0 goto :start_venv
 if "%PIP_INSTALLER_LOCATION%" == "" goto :show_stdout_stderr
-%PYTHON% "%PIP_INSTALLER_LOCATION%" >tmp/stdout.txt 2>tmp/stderr.txt
+%PYTHON% "%PIP_INSTALLER_LOCATION%" >tmp\stdout.txt 2>tmp\stderr.txt
 if %ERRORLEVEL% == 0 goto :start_venv
 echo Couldn't install pip
 goto :show_stdout_stderr
@@ -24,12 +26,12 @@ goto :show_stdout_stderr
 if ["%VENV_DIR%"] == ["-"] goto :skip_venv
 if ["%SKIP_VENV%"] == ["1"] goto :skip_venv
 
-dir "%VENV_DIR%\Scripts\Python.exe" >tmp/stdout.txt 2>tmp/stderr.txt
+dir "%VENV_DIR%\Scripts\Python.exe" >tmp\stdout.txt 2>tmp\stderr.txt
 if %ERRORLEVEL% == 0 goto :activate_venv
 
 for /f "delims=" %%i in ('CALL %PYTHON% -c "import sys; print(sys.executable)"') do set PYTHON_FULLNAME="%%i"
 echo Creating venv in directory %VENV_DIR% using python %PYTHON_FULLNAME%
-%PYTHON_FULLNAME% -m venv "%VENV_DIR%" >tmp/stdout.txt 2>tmp/stderr.txt
+%PYTHON_FULLNAME% -m venv "%VENV_DIR%" >tmp\stdout.txt 2>tmp\stderr.txt
 if %ERRORLEVEL% == 0 goto :activate_venv
 echo Unable to create venv in directory "%VENV_DIR%"
 goto :show_stdout_stderr
@@ -40,40 +42,112 @@ echo venv %PYTHON%
 
 :skip_venv
 
-:launch
-
-if exist "%VENV_DIR%\Lib\site-packages\torch" goto skip_torch
+:install_torch
+if exist "%VENV_DIR%\Lib\site-packages\torch" goto :install_requirements
+echo.
+echo === Installing PyTorch ===
 "%VENV_DIR%\Scripts\python.exe" -m pip install --upgrade --pre torch --index-url https://download.pytorch.org/whl/cu132
+if %ERRORLEVEL% == 0 goto :install_requirements
+echo.
+echo Failed to install PyTorch. Check your internet connection and free disk space.
+goto :fail
 
-:skip_torch
-"%VENV_DIR%\Scripts\python.exe" -m pip install -r requirements.txt
+:install_requirements
+echo.
+echo === Installing Python requirements ===
+del tmp\pip.log 2>NUL
+"%VENV_DIR%\Scripts\python.exe" -m pip install --log tmp\pip.log -r requirements.txt
+if %ERRORLEVEL% == 0 goto :check_node
+
+rem pip failed - try to tell the user why
+findstr /i /c:"failed building wheel for spacy-pkuseg" tmp\pip.log >NUL 2>NUL
+if %ERRORLEVEL% == 0 goto :fail_buildtools
+findstr /i /c:"Microsoft Visual C++ 14" tmp\pip.log >NUL 2>NUL
+if %ERRORLEVEL% == 0 goto :fail_buildtools
+
+echo.
+echo Failed to install Python requirements. See the output above and tmp\pip.log.
+goto :fail
+
+:fail_buildtools
+echo.
+echo Failed to build the spacy-pkuseg package.
+echo.
+echo This package has no prebuilt wheel for your Python version and must be
+echo compiled, which requires a C++ compiler.
+echo.
+echo Install "Microsoft C++ Build Tools" from:
+echo     https://visualstudio.microsoft.com/visual-cpp-build-tools/
+echo.
+echo In the installer, select the "Desktop development with C++" workload,
+echo then reboot and run install.cmd again.
+goto :fail
+
+:check_node
+where npm >tmp\stdout.txt 2>tmp\stderr.txt
+if %ERRORLEVEL% == 0 goto :build_frontend
+echo.
+echo Couldn't find npm. Install a recent Node.js from https://nodejs.org/
+echo and run install.cmd again.
+goto :fail
+
+:build_frontend
+echo.
+echo === Installing frontend dependencies ===
+pushd "%~dp0gui\frontend"
+call npm install
+if %ERRORLEVEL% == 0 goto :build_frontend_bundle
+popd
+echo.
+echo npm install failed. See the output above.
+goto :fail
+
+:build_frontend_bundle
+echo.
+echo === Building frontend ===
+call npm run build
+if %ERRORLEVEL% == 0 goto :frontend_done
+popd
+echo.
+echo npm run build failed. See the output above.
+goto :fail
+
+:frontend_done
+popd
 
 echo.
 echo Successful install! You can close this window.
 
+popd
 pause
-exit /b
+exit /b 0
 
 :show_stdout_stderr
 
 echo.
 echo exit code: %errorlevel%
 
-for /f %%i in ("tmp\stdout.txt") do set size=%%~zi
+for %%i in (tmp\stdout.txt) do set size=%%~zi
+if not defined size goto :show_stderr
 if %size% equ 0 goto :show_stderr
 echo.
 echo stdout:
 type tmp\stdout.txt
 
 :show_stderr
-for /f %%i in ("tmp\stderr.txt") do set size=%%~zi
-if %size% equ 0 goto :show_stderr
+set size=
+for %%i in (tmp\stderr.txt) do set size=%%~zi
+if not defined size goto :fail
+if %size% equ 0 goto :fail
 echo.
 echo stderr:
 type tmp\stderr.txt
 
-:endofscript
+:fail
 
 echo.
-echo Launch unsuccessful. Exiting.
+echo Install unsuccessful. Exiting.
+
+popd
 pause
+exit /b 1
